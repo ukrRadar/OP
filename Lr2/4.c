@@ -10,9 +10,8 @@ int main()
     while (1)
     {
         printf("Введіть символ: ");
-        scanf(" %c", &character);
-        
-        
+        character = getchar();
+    
         if(isalpha(character))
         {
             printf("Символ %c э в алфавіті\n", character);
@@ -46,5 +45,6 @@ int main()
                 printf("Неправильний вибір, спробуйте ще раз\n");
             }
         }
+        getchar();
     }
 }
